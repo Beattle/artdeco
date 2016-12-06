@@ -1,0 +1,1 @@
+<img alt="art-deco-logo" src="/upload/medialibrary/a74/a74fe712e0d890638ea16c74bb42055a.png"><br>

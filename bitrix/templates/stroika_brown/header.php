@@ -92,17 +92,10 @@ CModule::IncludeModule("iblock");
 				<div class="logo">
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/logo.php", Array(), Array("MODE" => "html","NAME" => "ваш логотип"));?>
 				</div>
-				<div class="header_search">
-					<?$APPLICATION->IncludeComponent("bitrix:search.form", "search", Array(
-						"COMPONENT_TEMPLATE" => "flat",
-							"PAGE" => "#SITE_DIR#search/",	// Страница выдачи результатов поиска (доступен макрос #SITE_DIR#)
-							"USE_SUGGEST" => "N",	// Показывать подсказку с поисковыми фразами
-						),
-						false
-					);?>
-					<div class="header_address">
-						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/address.php", Array(), Array("MODE" => "html","NAME" => "ваш адрес"));?>
-					</div>
+				<div class="header_slogan">
+                    <?$APPLICATION->IncludeFile(SITE_DIR."include/header/slogan.php", Array(), Array("MODE" => "html","NAME" => "ваш PR слоган"));?>
+
+
 				</div>
 				<div class="header_contact">
 					<div class="header_phone">
@@ -115,6 +108,9 @@ CModule::IncludeModule("iblock");
 						</div>
 					</div>
 					<button><?=GetMessage("ADD_APL");?></button>
+                    <div class="header_address">
+                        <?$APPLICATION->IncludeFile(SITE_DIR."include/header/address.php", Array(), Array("MODE" => "html","NAME" => "ваш адрес"));?>
+                    </div>
 				</div>
 			</div>
 			<div class="mobile_header_search">
