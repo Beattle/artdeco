@@ -47,15 +47,16 @@ $("footer").css("margin-top","-"+$("footer").innerHeight()+"px");
 
 
 /* Слайдер */
-$("#slides .slide_text").css({"margin-top":"-"+$("#slides .slide_text").height() / 2 +"px"});
-$("#slides .slides_images").css({"width":$(window).width()+"px"});
-$(window).resize(function(){
+/*$("#slides .slide_text").css({"margin-top":"-"+$("#slides .slide_text").height() / 2 +"px"});
+$("#slides .slides_images").css({"width":$(window).width()+"px"});*/
+
+/*$(window).resize(function(){
 	$("#slides .slides_images").css({"width":$(window).width()+"px"});
 	$("#slides .slide_text").css({"margin-top":"-"+$("#slides .slide_text").height() / 2 +"px"});
 	$(".hFooter").height($("footer").innerHeight());
 	$("footer").css("margin-top","-"+$("footer").innerHeight()+"px");
 });
-$(".prev, .next").css({"margin-top":"-"+$(".prev").height() / 2+"px"});
+$(".prev, .next").css({"margin-top":"-"+$(".prev").height() / 2+"px"});*/
 
 
 /* В проектах показать еще элементы */

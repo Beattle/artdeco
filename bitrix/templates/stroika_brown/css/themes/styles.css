@@ -11,7 +11,7 @@
 header{
 }
 .header_wrapper{
-	border-bottom: 1px solid #926D66;
+	background: url("images/h-bg.png") repeat;
 }
 .header_center{
 	margin:    0 auto;
@@ -65,6 +65,7 @@ header{
 	text-align: center;
 	font-size: 25px;
 	text-transform: uppercase;
+	padding: 95px 0;
 }
 
 .header_search{
@@ -99,26 +100,29 @@ header{
 	cursor:     pointer;
 }
 .header_address{
-	background:  url("images/address_icon.png") no-repeat;
-	height:      26px;
-	padding:     0 0 0 30px;
-	line-height: 25px;
+	display: inline-block;
+	min-width: 183px;
+	text-align: center;
+	margin-bottom: 25px;
 }
 .header_contact{
 	float:      left;
 	width:      33.3333%;
 	text-align: right;
+	padding: 43px 0;
 }
 .header_phone{
-	color:       #000;
-	background:  url("images/phone_icon.png") no-repeat;
-	height:      29px;
-	display:     inline-block;
-	margin:      0 0 10px 0;
-	padding:     0 0 0 35px;
-	font-size:   25px;
-	font-family: PTSansBold;
+	color:       #3f3f3f;
+	margin:      0 0 25px 0;
+	font-size:   23px;
+	font-family: PTSansRegular,sans-serif;
 }
+
+.header_phone b{
+	color:#000;
+	font-weight: 400;
+}
+
 .header_email{
 	margin: 0 0 10px 0;
 	color:  #b3b3b3;
@@ -145,22 +149,26 @@ header{
 .header_email .email_decoration:hover{
 	border: none;
 }
+
+.req_btn{
+	min-width: 183px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size:     17px;
+	font-family:   PTSansRegular,sans-serif;
+	text-align: center;
+	color: #202020;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
 .header_contact button{
 	border-radius: 5px;
-	border:        1px solid #f80;
-	color:         #fff;
-	font-size:     17px;
-	font-family:   PTSansBold;
-	padding:       4px 12px;
+	border:        2px solid #8dd212;
+	padding:       9px 12px;
 	cursor:        pointer;
-	background:    #ffb300; /* Old browsers */
-	background:    -moz-linear-gradient(top, #ffb300 5%, #f80 100%); /* FF3.6+ */
-	background:    -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffb300), color-stop(100%, #f80)); /* Chrome,Safari4+ */
-	background:    -webkit-linear-gradient(top, #ffb300 5%, #f80 100%); /* Chrome10+,Safari5.1+ */
-	background:    -o-linear-gradient(top, #ffb300 5%, #f80 100%); /* Opera 11.10+ */
-	background:    -ms-linear-gradient(top, #ffb300 5%, #f80 100%); /* IE10+ */
-	background:    linear-gradient(to bottom, #ffb300 5%, #f80 100%); /* W3C */
-	filter:        progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb300', endColorstr='#ff8800', GradientType=0); /* IE6-9 */
+	background: none;
+	width: 100%;
 }
 .fixed_menu{
 	position: fixed;
@@ -191,16 +199,17 @@ header{
 	top:        13px;
 	right:      3%;
 }
+
+.nav_wrapper{
+	padding: 3px 0;
+	border-top: 1px solid #d9d7d7;
+	border-bottom: 1px solid #d9d7d7;
+	background: #f4f4f4;
+}
+
 header nav{
-	border-top: 1px solid #bda49f;
-	background: #bda49f; /* Old browsers */
-	background: -moz-linear-gradient(top, #bda49f 0%, #926D66 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bda49f), color-stop(100%, #926D66)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #bda49f 0%, #926D66 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #bda49f 0%, #926D66 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #bda49f 0%, #926D66 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #bda49f 0%, #926D66 100%); /* W3C */
-	filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#bda49f', endColorstr='#926D66 ', GradientType=0); /* IE6-9 */
+	border-top: 1px solid #cdcdcd;
+	border-bottom: 1px solid #cdcdcd;
 }
 header nav ul{
 	margin:    0 auto;
@@ -210,14 +219,15 @@ header nav ul{
 header nav ul li{
 	width:        12.5%;
 	box-sizing:   border-box;
-	font-family:  PTSansBold;
 	border-right: 1px solid #bda49f;
 	border-left:  1px solid #926D66;
 	float:        left;
 	height:       50px;
+	font-family:  PTSansRegular, sans-serif;
+	font-weight: 500;
 }
-header nav ul li a{
-	color:           #fff;
+header nav  a{
+	color:           #000;
 	text-decoration: none;
 	display:         block;
 	line-height:     48px;
@@ -225,8 +235,7 @@ header nav ul li a{
 	height:          100%;
 }
 header nav ul li a.selected, header nav ul li a:hover{
-	background: #926D66;
-	color:      #fff;
+
 }
 header nav ul li:last-child{
 	border-right: none;

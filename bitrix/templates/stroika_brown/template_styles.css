@@ -3,12 +3,20 @@
 	padding: 0;
 	outline: none;
 }
+
+.bold{
+	font-weight: bold;
+}
+
 img{
 	border: none;
+	max-width: 100%;
 }
 html, body{
 	height: 100%;
 }
+
+
 body{
 	font-family: PTSansRegular;
 	background:  #fff;
@@ -446,9 +454,7 @@ footer{     /* height:149px; */
 	.header_center .logo{
 		margin: 0;
 	}
-	.header_contact{
 
-	}
 	#slides .slide_text .title{
 		font-size: 40px;
 	}
@@ -658,7 +664,28 @@ footer{     /* height:149px; */
 
 	.header_slogan{
 		width: 100%;
+		padding: 0;
+		margin: 23px 0 38px;
 	}
+
+	.header_slogan br{
+		display: none;
+	}
+
+	.header_slogan{
+		font-size: 18px;
+	}
+
+	.header_contact{
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+
+	.header_address{
+		display: block;
+	}
+
 	.services_element{
 		width:  49%;
 		margin: 0 2% 40px 0;
@@ -697,9 +724,7 @@ footer{     /* height:149px; */
 	.pros_element:nth-child(2n+2) > div{
 		border-right: none;
 	}
-	.header_contact{
-		display: none;
-	}
+
 	.header_center .logo{
 		width:      100%;
 		text-align: center;
