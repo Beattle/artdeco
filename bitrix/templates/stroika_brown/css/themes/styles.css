@@ -5,7 +5,7 @@
 	height:     auto !important;
 }
 .wrapper_center{
-	margin:    10px auto;
+	margin:    0 auto;
 	max-width: 1000px;
 }
 header{
@@ -109,7 +109,7 @@ header{
 	float:      left;
 	width:      33.3333%;
 	text-align: right;
-	padding: 43px 0;
+	padding:    30px 0;
 }
 .header_phone{
 	color:       #3f3f3f;
@@ -210,22 +210,54 @@ header{
 header nav{
 	border-top: 1px solid #cdcdcd;
 	border-bottom: 1px solid #cdcdcd;
+	background: -webkit-linear-gradient(top, rgb(242, 241, 241) 0%, rgb(216, 216, 216) 100%);
+	background: -o-linear-gradient(top, rgb(242, 241, 241) 0%, rgb(216, 216, 216) 100%);
+	background: -ms-linear-gradient(top, rgb(242, 241, 241) 0%, rgb(216, 216, 216) 100%);
+	background: -moz-linear-gradient(top, rgb(242, 241, 241) 0%, rgb(216, 216, 216) 100%);
+	background: linear-gradient(to bottom, rgb(242, 241, 241) 0%, rgb(216, 216, 216) 100%);
 }
 header nav ul{
 	margin:    0 auto;
 	max-width: 1000px;
-	overflow:  hidden;
+	position: relative;
 }
+
+#magic-line {
+	background: #a0ce4e none repeat scroll 0 0;
+	top: -4px;
+	height: 3px;
+	left: 0;
+	position: absolute;
+	width: 100px;
+}
+
 header nav ul li{
 	width:        12.5%;
-	box-sizing:   border-box;
-	border-right: 1px solid #bda49f;
-	border-left:  1px solid #926D66;
-	float:        left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	display: inline-block;
 	height:       50px;
 	font-family:  PTSansRegular, sans-serif;
 	font-weight: 500;
+	margin-right:-4px ;
+	position: relative;
 }
+
+header nav ul li:not(#magic-line)::after{
+	background: url("images/m_sep.png") repeat-y;
+	content:"";
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+header nav ul li:last-child::after{
+	background: none;
+}
+
 header nav  a{
 	color:           #000;
 	text-decoration: none;
@@ -243,17 +275,49 @@ header nav ul li:last-child{
 header nav ul li:first-child{
 	border-left: none;
 }
-#slides{
+
+#slider-cont::before, #slider-cont::after {
+	content: "";
+	display: table;
+	line-height: 0;
+}
+
+#slider-cont::after{
+	clear: both;
+}
+
+#slider-cont{
+	width: 1600px;
+	margin: 0 auto;
 	position: relative;
 }
-#slides .slides_container{
+
+#slides {
+	display: none
 }
+
+
+
+
+
+
+#slides{
+/*	position: relative;
+	max-width: 1600px;
+	margin: 0 auto;*/
+}
+
+#slides img{
+	height: auto;
+}
+
+
 #slides .pagination{
 	display: none;
 }
-#slides .slides_images{
+/*#slides .slides_images{
 	height: 450px;
-}
+}*/
 #slides .slide_text{
 	text-align: center;
 	color:      #fff;
@@ -292,7 +356,7 @@ header nav ul li:first-child{
 	background: #fff;
 	color:      #4c4c4c;
 }
-#slides .prev, .next{
+#slider-cont .prev, .next{
 	top:        50%;
 	background: url("images/slider/nav.png");
 	width:      27px;
@@ -300,30 +364,26 @@ header nav ul li:first-child{
 	position:   absolute;
 	cursor:     pointer;
 	z-index:    10;
+	margin-top: -35px;
 }
-#slides .prev{
+#slider-cont .prev{
 	background-position: 0px 0px;
 	left:                5%;
 }
-#slides .next{
+#slider-cont .next{
 	background-position: -60px 0px;
 	right:               5%;
 }
-#slides .prev:hover{
+#slider-cont .prev:hover{
 	background-position: -30px 0px;
 }
-#slides .next:hover{
+#slider-cont .next:hover{
 	background-position: -90px 0px;
 }
+
 .pros{
-	background: #fff; /* Old browsers */
-	background: -moz-linear-gradient(top, #fff 1%, #f0f0f0 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fff), color-stop(100%, #f0f0f0)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #fff 1%, #f0f0f0 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #fff 1%, #f0f0f0 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #fff 1%, #f0f0f0 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #fff 1%, #f0f0f0 100%); /* W3C */
-	filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0); /* IE6-9 */
+	background: url("images/f_bg.png") no-repeat;
+	min-height: 308px;
 }
 .pros_center{
 	max-width: 1000px;

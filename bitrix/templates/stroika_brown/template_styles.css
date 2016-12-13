@@ -231,78 +231,21 @@ footer{     /* height:149px; */
                                                                  ÃŒ¡»À‹Õ¿ﬂ ¬≈–—“ ¿
 —Î‡È‰Â ‰Îˇ ÏÓÌËÚÓÓ‚ Ò 480px ‰Ó 1024px
 */
-@media only screen and (min-width: 967px) and (max-width: 1024px){
-	#slides .slides_images{
-		height: 402px !important;
-	}
-	.slides_control{
-		height: 402px !important;
-	}
-}
-@media only screen and (min-width: 854px) and (max-width: 966px){
-	#slides .slides_images{
-		height: 380px !important;
-	}
-	.slides_control{
-		height: 380px !important;
-	}
-}
-@media only screen and (min-width: 801px) and (max-width: 853px){
-	#slides .slides_images{
-		height: 335px !important;
-	}
-	.slides_control{
-		height: 335px !important;
-	}
-}
+
+
+
 @media only screen and (min-width: 769px) and (max-width: 800px){
-	#slides .slides_images{
-		height: 314px !important;
-	}
-	.slides_control{
-		height: 314px !important;
-	}
+
+
+    #magic-line{
+	    display: none;
+    }
 }
-@media only screen and (min-width: 668px) and (max-width: 768px){
-	#slides .slides_images{
-		height: 302px !important;
-	}
-	.slides_control{
-		height: 302px !important;
-	}
-}
-@media only screen and (min-width: 604px) and (max-width: 667px){
-	#slides .slides_images{
-		height: 262px !important;
-	}
-	.slides_control{
-		height: 262px !important;
-	}
-}
-@media only screen and (min-width: 534px) and (max-width: 603px){
-	#slides .slides_images{
-		height: 237px !important;
-	}
-	.slides_control{
-		height: 237px !important;
-	}
-}
-@media only screen and (min-width: 481px) and (max-width: 533px){
-	#slides .slides_images{
-		height: 209px !important;
-	}
-	.slides_control{
-		height: 209px !important;
-	}
-}
-@media only screen and (max-width: 480px){
-	#slides .slides_images{
-		height: 202px !important;
-	}
-	.slides_control{
-		height: 202px !important;
-	}
-}
+
+
+
+
+
 @media only screen and (max-width: 1365px){
 	.total_price{
 		display: none !important;
@@ -921,5 +864,45 @@ footer{     /* height:149px; */
 	}
 	.news_detail_item img{
 		width: 100%;
+	}
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+	#slider-cont {
+		width: auto
+	}
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+	#slider-cont {
+		width: auto
+	}
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+	#slider-cont {
+		width: 724px
+	}
+}
+
+@media (min-width: 1024px){
+	#slider-cont{
+		width: 1024px;
+	}
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+	#slider-cont {
+		width: 1200px
+	}
+}
+
+@media (min-width: 1600px){
+	#slider-cont{
+		width: 1600px;
 	}
 }

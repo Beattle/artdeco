@@ -1,5 +1,6 @@
 <?
 IncludeTemplateLangFile(__FILE__);
+$context = \Bitrix\Main\Application::getInstance()->getContext();
 ?>
 <!DOCTYPE HTML>
 <html lang="<?=LANGUAGE_ID?>">
@@ -19,7 +20,7 @@ IncludeTemplateLangFile(__FILE__);
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery.bxslider.js"></script>
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery.cookie.js"></script>
-	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/slides.min.jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery.slides.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery.bxslider.js" type="text/javascript"></script>
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/device.js" type="text/javascript"></script>
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/fancybox.js" type="text/javascript"></script>
@@ -34,7 +35,7 @@ IncludeTemplateLangFile(__FILE__);
 	<![endif]-->
 	<?$APPLICATION->ShowHead();?>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage">
+<body class="<?=$APPLICATION->GetCurPage();?>" itemscope itemtype="http://schema.org/WebPage">
 <div class="wrapper">
 <?
 $APPLICATION->ShowPanel();
@@ -119,7 +120,7 @@ CModule::IncludeModule("iblock");
 			</div>-->
 		</div>
 	</div>
-    <div class="nav_wrapper">
+    <div class="nav_wrapper default">
 	    <nav id="top_menu" class="default">
 		<a href="#" id="mobile_menu"><?=GetMessage("MENU");?></a>
 		<?$APPLICATION->IncludeComponent(
@@ -146,7 +147,8 @@ CModule::IncludeModule("iblock");
     </div>
 </header>
 <?if ($APPLICATION->GetCurPage(false) == SITE_DIR){?>
-<div id="slides">
+<div id="slider-cont">
+    <div id="slides">
 		<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"slider", 
@@ -211,12 +213,15 @@ CModule::IncludeModule("iblock");
 	),
 	false
 );?>
+    </div>
+
 </div>
 <?}?>
 
-<div class="wrapper_center">
-<?if ($APPLICATION->GetCurPage(false)!=SITE_DIR){
-$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb", Array(
+
+<?if ($APPLICATION->GetCurPage(false)!=SITE_DIR){ ?>
+    <div class="wrapper_center">
+<?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb", Array(
 	"COMPONENT_TEMPLATE" => ".default",
 		"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
 		"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)

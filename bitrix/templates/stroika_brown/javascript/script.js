@@ -141,10 +141,10 @@ $(".background").click(function(){
 var $menu = $("#top_menu");
 $(window).scroll(function(){
 	if((device.windows() || device.fxos()) && $(window).width() > '1023') {
-		if ( $(this).scrollTop() > 180 && $menu.hasClass("default") ){
-			$menu.removeClass("default").addClass("fixed_menu");
-		} else if($(this).scrollTop() <= 180 && $menu.hasClass("fixed_menu")) {
-			$menu.removeClass("fixed_menu").addClass("default");
+		if ( $(this).scrollTop() > 180 && $menu.parent().hasClass("default") ){
+			$menu.parent().removeClass("default").addClass("fixed_menu");
+		} else if($(this).scrollTop() <= 180 && $menu.parent().hasClass("fixed_menu")) {
+			$menu.parent().removeClass("fixed_menu").addClass("default");
 		}
 	}
 });
@@ -172,12 +172,25 @@ $back_to_top.on('click', function(event){
 $(".projects_photo a").fancybox();
 
 
-$('#slides').slides({
-	preload: true,
-	preloadImage: '/bitrix/templates/site/css/themes/images/slider/loading.gif',
-	play: 5000,
-	hoverPause: false,
-	animationComplete: function(current){if (window.console && console.log) {};}
+$('#slides').slidesjs({
+    width:1600,
+    height:450,
+    play: {
+        active: false,
+        effect: "slide",
+        interval: 5000,
+        auto: false,
+        restartDelay: 2500,
+        swap: false
+    },
+    navigation: {
+        active: false,
+        effect: "slide"
+    },
+    pagination: {
+        active:false
+    }
+
 });
 
 
@@ -246,5 +259,40 @@ $('.style-switcher .options li').click(function(e){
 	$("[data-color = 'true']").attr("href",link_color);
 	$.cookie('color_theme', name_color, { expires: 7, path: '/' });
 });
+
+
+    menu.prepend("<li id='magic-line'></li>");
+
+    /* Cache it */
+    var
+        $magicLine = $("#magic-line"),
+        $curPage = $(".cur-page"),
+        $curWidth = $curPage.width(),
+        $curPosition = $curPage.position().left;
+
+    
+
+    $magicLine
+        .width($curWidth)
+        .css("left", $curPosition)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width());
+
+    menu.find("li").hover(function() {
+
+        var $el = $(this);
+        var leftPos = $el.position().left;
+        var newWidth = $el.width();
+
+        $magicLine.stop().animate({
+            left: leftPos,
+            width: newWidth
+        });
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });
+    });
 
 });
