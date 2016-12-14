@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ваш сайт");
+$APPLICATION->SetTitle("Ремонт под ключ в уфе");
 $APPLICATION->SetPageProperty("tags", "Главная");
 $APPLICATION->SetPageProperty("keywords", "Ключевые, слова, вашего, сайта");
 $APPLICATION->SetPageProperty("description", "Описание вашего сайта");
@@ -9,16 +9,62 @@ $APPLICATION->SetPageProperty("description", "Описание вашего сайта");
 <div class="pros">
     <div class="wrapper_center">
         <div class="box">
-            <img  src="/bitrix/templates/stroika_brown/css" />
-            <span></span>
+            <i class="icon smeta"></i>
+            <p class="f_name">
+                <?$APPLICATION->IncludeFile(
+                    SITE_DIR."include/index/froze.php",
+                    Array(),
+                    Array(
+                        "MODE" => "html",
+                        "NAME" => "Надпись"
+                    )
+                );?>
+            </p>
         </div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+            <i class="icon exp"></i>
+            <p class="f_name">
+                <?$APPLICATION->IncludeFile(
+                    SITE_DIR."include/index/experience.php",
+                    Array(),
+                    Array(
+                        "MODE" => "html",
+                        "NAME" => "Надпись"
+                    )
+                );?>
+            </p>
+        </div>
+        <div class="box">
+            <i class="icon warr"></i>
+            <p class="f_name">
+                <?$APPLICATION->IncludeFile(
+                    SITE_DIR."include/index/protection.php",
+                    Array(),
+                    Array(
+                        "MODE" => "html",
+                        "NAME" => "Надпись"
+                    )
+                );?>
+            </p>
+        </div>
+        <div class="box">
+            <i class="icon limits"></i>
+            <p class="f_name">
+                <?$APPLICATION->IncludeFile(
+                    SITE_DIR."include/index/time.php",
+                    Array(),
+                    Array(
+                        "MODE" => "html",
+                        "NAME" => "Надпись"
+                    )
+                );?>
+            </p>
+        </div>
     </div>
 </div>
 <div class="wrapper_center">
 <div class="services">
+    <h1><?$APPLICATION->ShowTitle();?></h1>
 	<div class="services_center">
 		<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
@@ -89,13 +135,16 @@ $APPLICATION->SetPageProperty("description", "Описание вашего сайта");
 </div>
 <div class="about_company">
 	<div class="about_company_center">
-			<h1>
+			<h2>
+                <span>
 				<?$APPLICATION->IncludeFile(SITE_DIR."include/index/about_company.php", Array(), Array("MODE" => "html","NAME" => ""));?>
-			</h1>
+                </span>
+			</h2>
+
 			<div>
 				<?$APPLICATION->IncludeFile(SITE_DIR."include/index/about_company_text.php", Array(), Array("MODE" => "html","NAME" => ""));?>
 			</div>
-			<div class="about_company_img"></div>
+        <button class="see_more">Посмотреть весь текст</button>
 	</div>
 </div>
 <div class="wrapper_center">

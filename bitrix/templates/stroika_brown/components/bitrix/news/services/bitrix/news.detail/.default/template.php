@@ -22,7 +22,7 @@ $picture = CFile::ResizeImageGet(
 ?>
 <div class="services_detail">
 	<article class="services_detail_item" itemscope itemtype="http://schema.org/Article">
-		<img src="<?=$picture["src"]?>" alt="<?=$arResult["NAME"]?>" title="<?=$arResult["NAME"]?>" itemprop="image" />
+<!--		<img src="<?/*=$picture["src"]*/?>" alt="<?/*=$arResult["NAME"]*/?>" title="<?/*=$arResult["NAME"]*/?>" itemprop="image" />-->
 		<div itemprop="description">
 			<?=$arResult["DETAIL_TEXT"];?>
 		</div>

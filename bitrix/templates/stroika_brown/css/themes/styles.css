@@ -382,27 +382,61 @@ header nav ul li:first-child{
 }
 
 .pros{
-	background: url("images/f_bg.png") no-repeat;
+	background: url("images/f_bg.png") repeat-y;
 	min-height: 308px;
+	position: relative;
 }
-.pros_center{
-	max-width: 1000px;
-	margin:    0 auto;
-	padding:   15px 0;
-	overflow:  hidden;
-}
-.pros_element{
-	float:      left;
-	width:      25%;
+
+.pros .box{
+	float: left;
+	width: 25%;
 	text-align: center;
 }
-.pros_element:last-child > div{
-	border-right: none;
+
+.pros .icon{
+	width: 139px;
+	height: 139px;
+	display: inline-block;
 }
-.pros_element > div{
-	border-right: 2px dotted #e2e2e2;
-	padding:      10px;
+.pros .smeta{
+	background: url("images/pros/smeta.png") no-repeat;
 }
+
+.pros .exp{
+	background: url("images/pros/exp.png") no-repeat;
+}
+
+.pros .warr{
+	background: url("images/pros/warr.png") no-repeat;
+}
+
+.pros .limits {
+	background: url("images/pros/limits.png") no-repeat;
+}
+
+.pros b{
+	text-transform: uppercase;
+}
+
+.pros .wrapper_center:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.pros .wrapper_center{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	overflow: hidden;
+	height: 183px;
+}
+
+
+
 .pros_element div.froze_icon{
 	margin:     0 auto 5px auto;
 	background: url("images/pros/froze_icon_brown.png") no-repeat;
@@ -431,6 +465,13 @@ header nav ul li:first-child{
 .services{
 	padding: 30px 0;
 }
+
+.services h1{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
 .services_center{
 	max-width:  1000px;
 	margin:     0 auto;
@@ -439,16 +480,19 @@ header nav ul li:first-child{
 }
 .services_element{
 	float:      left;
-	width:      32%;
+	width:      23%;
 	text-align: center;
 	margin:     0 2% 40px 0;
 }
+
+.services_center .services_element:last-child{
+	margin-right: 0;
+}
+
 .services_element > div{
 	position: relative;
 }
-.services_element:nth-child(3n+3){
-	margin: 0;
-}
+
 .services_element a.animation_img{
 	position: relative;
 	display:  block;
@@ -462,7 +506,7 @@ header nav ul li:first-child{
 	transition: transform 0.2s ease-in;
 }
 .services_element > div p a{
-	color:       #926D66;
+	color:       #242424;
 	font-family: PTSansBold;
 	font-size:   18px;
 }
@@ -472,10 +516,37 @@ header nav ul li:first-child{
 .about_company{
 	position:        relative;
 	padding:         25px 0;
-	background:      url('images/about_background.jpg') no-repeat center center;
+	background:      url('images/bg_rep.jpg') no-repeat center center;
 	background-size: cover;
 	min-height:      350px;
 }
+
+.about_company h2{
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.about_company h2 span{
+	position: relative;
+}
+
+.about_company h2 span:after,.about_company h2 span:before{
+	content: "";
+	width: 55px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: -6px;
+}
+
+.about_company h2 span:after{
+	background: url("images/about_right.png") no-repeat;
+}
+
+.about_company h2 span:before{
+	background: url("images/about_left.png") no-repeat;
+}
+
 .about_company_center{
 	max-width: 1000px;
 	margin:    0 auto;
@@ -502,6 +573,22 @@ header nav ul li:first-child{
 	width:      326px;
 	height:     244px;
 }
+
+.see_more{
+	display: block;
+	width: 175px;
+	margin: 0 auto;
+	background: #000;
+	color: #fff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius:    7px;
+	border-radius:         7px;
+	border: 1px solid #fff;
+	padding: 8px 5px;
+	font-style: oblique;
+	cursor: pointer;
+}
+
 .last_work{
 	padding: 100px 0 25px 0;
 }
@@ -555,7 +642,7 @@ a.animation_img .link{
 	position:        absolute;
 	top:             -50px;
 	right:           -50px;
-	background:      #B89E98;
+	background:      #a0ce4e;
 	height:          50px;
 	width:           50px;
 	line-height:     50px;

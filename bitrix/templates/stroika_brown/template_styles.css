@@ -40,11 +40,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 h1{
 	font-size:      26px;
-	text-transform: none;
+	text-transform: uppercase;
 	font-family:    PTSansBold;
 }
 h2{
-	font-size:      24px;
+	font-size:      22px;
 	text-transform: uppercase;
 	font-family:    PTSansBold;
 }
@@ -366,6 +366,11 @@ footer{     /* height:149px; */
 	}
 }
 @media only screen and (max-width: 966px){
+
+	.pros .wrapper_center{
+		height: 203px;
+	}
+
 	#slides .slide_text .title{
 		font-size: 60px;
 	}
@@ -660,9 +665,16 @@ footer{     /* height:149px; */
 	.pros_center{
 		padding: 15px 0 0 0;
 	}
-	.pros_element{
+
+	.pros .wrapper_center{
+		position: relative;
+		height: auto;
+		padding-top: 15px;
+	}
+
+	.pros .box{
 		width:      50%;
-		min-height: 150px;
+		min-height: 209px;
 	}
 	.pros_element:nth-child(2n+2) > div{
 		border-right: none;
@@ -825,7 +837,7 @@ footer{     /* height:149px; */
 	}
 }
 @media only screen and (max-width: 414px){
-	.pros_element{
+	.pros .box{
 		width:      100%;
 		float:      none;
 		margin:     0 0 10px 0;
