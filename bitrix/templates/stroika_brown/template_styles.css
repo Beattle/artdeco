@@ -207,9 +207,7 @@ h3{
 #slides .slide_text{
 	z-index: 100;
 }
-.bx-viewport{
-	height: 147px !important;
-}
+
 #slides .slide_text{
 	margin-top: -130px !important;
 }

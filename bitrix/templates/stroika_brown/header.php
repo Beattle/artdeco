@@ -16,7 +16,7 @@ $context = \Bitrix\Main\Application::getInstance()->getContext();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery-1.10.2.js" type="text/javascript"></script>
+<!--	<script type="text/javascript" src="<?/*=SITE_TEMPLATE_PATH;*/?>/javascript/jquery-1.10.2.js" type="text/javascript"></script>-->
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery.bxslider.js"></script>
 	<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/javascript/jquery.cookie.js"></script>

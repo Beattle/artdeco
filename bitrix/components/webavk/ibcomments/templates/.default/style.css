@@ -1,0 +1,57 @@
+div.webavk_ibcomments{display:block;}
+div.webavk_ibcomments_item{display: block;margin:10px 0;padding:5px;border:1px dotted #cccccc;position:relative;}
+div.webavk_ibcomments_item td{vertical-align: top;}
+.webavk_ibcomments_user{width:80%;}
+.webavk_ibcomments_user img{float:left;margin:0 10px 10px 0;}
+.webavk_ibcomments_item_nomoderate{background-color: #e0e0e0;}
+.webavk_ibcomments_item_moderatearea{display:block;border:1px dashed #cccccc;position:absolute;right:-3px;top:-25px;padding:2px;background-color: #eeeeee;}
+.webavk_ibcomments_item_moderatearea a span{display:none;}
+.webavk_ibcomments_item_moderatearea a{display:inline-block;width:24px;height:24px;margin:0 2px;}
+.webavk_ibcomments_item_moderatearea_modok{background: url(images/modok.png) 0 0 no-repeat;}
+.webavk_ibcomments_item_moderatearea_modok:hover{background-position: 0 -24px;}
+.webavk_ibcomments_item_moderatearea_modfalse{background: url(images/modfalse.png) 0 0 no-repeat;}
+.webavk_ibcomments_item_moderatearea_modfalse:hover{background-position: 0 -24px;}
+.webavk_ibcomments_item_moderatearea_moddel{background: url(images/moddel.png) 0 0 no-repeat;}
+.webavk_ibcomments_item_moderatearea_moddel:hover{background-position: 0 -24px;}
+.webavk_ibcomments_item_moderatearea_modedit{background: url(images/modedit.png) 0 0 no-repeat;}
+.webavk_ibcomments_item_moderatearea_modedit:hover{background-position: 0 -24px;}
+
+.webavk_ibcomments_helpful_area{white-space: nowrap;text-align: right;}
+.webavk_ibcomments_helpul_plus_cnt{font-weight:bold;color:#067d00;line-height: 16px;vertical-align: middle;}
+.webavk_ibcomments_helpul_plus_link{text-decoration: none;display:inline-block;background: url(images/helpfulplus.png) 0 0 no-repeat;width:16px;height:16px;line-height: 16px;vertical-align: middle;}
+.webavk_ibcomments_helpul_plus_link:hover{background-position: 0 -16px;}
+.webavk_ibcomments_helpul_plus_link span{display:none;}
+.webavk_ibcomments_helpul_minus_cnt{font-weight:bold;color:#ab0000;line-height: 16px;vertical-align: middle;}
+.webavk_ibcomments_helpul_minus_link{text-decoration: none;display:inline-block;background: url(images/helpfulminus.png) 0 0 no-repeat;width:16px;height:16px;line-height: 16px;vertical-align: middle;}
+.webavk_ibcomments_helpul_minus_link:hover{background-position: 0 -16px;}
+.webavk_ibcomments_helpul_minus_link span{display:none;}
+.webavk_ibcomments_text_area{display:block;}
+.webavk_ibcomments_text_area h3{}
+.webavk_ibcomments_text_area_content{text-align: justify;padding:5px;border:1px dotted #e0e0e0;background-color: #f0f0f0;}
+
+.webavk_ibcomments_admin_answer{display:block;margin:20px 50px 0 150px;}
+.webavk_ibcomments_admin_answer h3{}
+.webavk_ibcomments_admin_answer_content{text-align: justify;padding:5px;border:2px dotted #c0c0c0;background-color: #bcd1ff;}
+.webavk_ibcomments_stars_area{white-space: nowrap;text-align: right;}
+.webavk_ibcomments_stars_block{display:block;padding:0 0 10px 0;}
+.webavk_ibcomments_stars_block h3{padding:0;margin:0;}
+.webavk_ibcomments_star{display: inline-block;width:16px;height:17px;background: url(images/star.png) 0 0 no-repeat;}
+.webavk_ibcomments_star_active{background-position: 0 -17px;}
+.webavk_ibcomments_add_area{display:block;padding: 0 0 10px 0;}
+.webavk_ibcomments_add_area .webavk_ibcomments_add_showlink{text-decoration: none;}
+.webavk_ibcomments_add_area .webavk_ibcomments_add_showlink span{border-bottom: 1px dotted #888888;}
+.webavk_ibcomments_add_area .webavk_ibcomments_add_showlink:hover span{border-bottom: 0 none;}
+.webavk_ibcomments_add_form{display:none;}
+.webavk_ibcomments_add_form_show{display:block;}
+.webavk_ibcomments_add_form table{border-collapse: collapse;}
+.webavk_ibcomments_add_form th{vertical-align: top;padding:5px;border:1px dotted #eeeeee;background-color: #f8f8f8;text-align: right;}
+.webavk_ibcomments_add_form td{vertical-align: top;padding:5px;border:1px dotted #eeeeee;background-color: #f8f8f8;text-align: left;}
+.webavk_ibcomments_add_form_note{padding:10px;text-align: right !important;font-weight:bold;font-style: italic;}
+.webavk_ibcomments_item_add_answer{display:block;padding:5px;}
+
+.webavk_ibcomments_answer_area{display:block;padding: 0 0 10px 0;}
+.webavk_ibcomments_answer_area table{border-collapse: collapse;}
+.webavk_ibcomments_answer_area th{vertical-align: top;padding:5px;border:1px dotted #eeeeee;background-color: #f8f8f8;text-align: right;}
+.webavk_ibcomments_answer_area td{vertical-align: top;padding:5px;border:1px dotted #eeeeee;background-color: #f8f8f8;text-align: left;}
+
+.webavk_ibcomments_item_sort_area{text-align: right;}

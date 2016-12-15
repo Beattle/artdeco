@@ -34,7 +34,6 @@ IncludeTemplateLangFile(__FILE__);
 					<div>
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/footer/copyright.php", Array(), Array("MODE" => "html","NAME" => ""));?>
 					</div>
-					<div class="quantom"><?=GetMessage("CREATE_SITE");?><a href="http://samovar-web.ru/"><?=GetMessage("SAMOVAR");?></a></div>
 				</div>
 				<div class="footer_guide">
 					<div class="footer_address">

@@ -5,8 +5,18 @@ $('.bxslider').bxSlider({
 	maxSlides: 2,
 	slideWidth: 495,
 	slideMargin: 10,
-	moveSlides: 1,
+	moveSlides: 1
 });
+
+    $('.webavk_ibcomments').bxSlider({
+        slideMargin:10,
+        slideWidth:300,
+        minSlides:1,
+        maxSlides:3,
+        // adaptiveHeight:true,
+        // responsive:false,
+        moveSlides:1,
+    });
 
 /* Форма обратной связи */
 $(".header_contact button").click(function(){	
