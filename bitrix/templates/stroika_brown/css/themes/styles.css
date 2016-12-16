@@ -11,7 +11,7 @@
 header{
 }
 .header_wrapper{
-	background: url("images/h-bg.png") repeat;
+	background: url("images/texture.png") repeat;
 }
 .header_center{
 	margin:    0 auto;
@@ -265,6 +265,7 @@ header nav  a{
 	line-height:     48px;
 	text-align:      center;
 	height:          100%;
+	text-transform: uppercase;
 }
 header nav ul li a.selected, header nav ul li a:hover{
 
@@ -382,7 +383,7 @@ header nav ul li:first-child{
 }
 
 .pros{
-	background: url("images/f_bg.png") repeat-y;
+	background: url("images/texture.png") repeat;
 	min-height: 308px;
 	position: relative;
 }
@@ -702,7 +703,7 @@ a.animation_img:hover img{
 
 .customer_reviews{
 	padding: 15px 0 30px 0;
-	background: transparent url('images/fb_bg.png');
+	background: transparent url('images/texture.png');
 }
 
 .customer_reviews .wrapper_center{
@@ -712,6 +713,10 @@ a.animation_img:hover img{
 .customer_reviews h2{
 	margin:         15px 0 15px 0;
 	text-align: center;
+}
+
+.customer_reviews .bx-viewport{
+	background: transparent;
 }
 
 .webavk_ibcomments:after{
@@ -725,15 +730,14 @@ a.animation_img:hover img{
 }
 
 .webavk_ibcomments .com_box{
-	width: 29%;
+	/*width: 29%;*/
 	/*display: inline-block;*/
-	margin-right: 2%;
 	opacity: 0.60;
 	filter:  alpha(opacity=60);
 	background: #fff;
 	border: 1px solid #e1e2e2;
 	padding: 28px 15px 57px 15px;
-	overflow: hidden;
+
 }
 
 .webavk_ibcomments_user span{
@@ -763,6 +767,21 @@ a.animation_img:hover img{
 
 .webavk_ibcomments_review{
 	margin-top: 23px;
+	color:#2e2e2e;
+}
+
+.customer_reviews .bx-wrapper .bx-controls-direction .bx-prev{
+	left: -40px;
+	background: url("images/fb_left.png") no-repeat;
+	height: 48px;
+	width: 26px;
+}
+
+.customer_reviews .bx-wrapper .bx-controls-direction .bx-next{
+	right: -40px;
+	background: url("images/fb_right.png") no-repeat;
+	height: 48px;
+	width: 26px;
 }
 
 .customer_reviews_element{
@@ -814,6 +833,7 @@ footer ul li a{
 	text-decoration: none;
 	line-height:     45px;
 	height:          100%;
+	text-transform: capitalize;
 }
 footer ul li a:hover{
 	text-decoration: underline;
@@ -1180,11 +1200,8 @@ div.load_bg{
 }
 .projects h2{
 	text-align:     center;
-	text-transform: inherit;
-	color:          #010101;
-	font-size:      30px;
-	margin:         0 0 15px 0;
-	font-family:    PTSansBold;
+	margin:         40px 0 15px 0;
+
 }
 .projects_block{
 	border-bottom: 1px dotted #ccc;
@@ -1236,21 +1253,13 @@ div.load_bg{
 	font-size: 14px;
 }
 .projects_block button{
-	border-radius: 5px;
-	border:        1px solid #f80;
-	color:         #fff;
 	font-size:     17px;
-	font-family:   PTSansBold;
-	padding:       7px 40px;
+	font-family:   PTSansBold,sans-serif;
 	cursor:        pointer;
-	background:    #ffb300; /* Old browsers */
-	background:    -moz-linear-gradient(top, #ffb300 5%, #f80 100%); /* FF3.6+ */
-	background:    -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffb300), color-stop(100%, #f80)); /* Chrome,Safari4+ */
-	background:    -webkit-linear-gradient(top, #ffb300 5%, #f80 100%); /* Chrome10+,Safari5.1+ */
-	background:    -o-linear-gradient(top, #ffb300 5%, #f80 100%); /* Opera 11.10+ */
-	background:    -ms-linear-gradient(top, #ffb300 5%, #f80 100%); /* IE10+ */
-	background:    linear-gradient(to bottom, #ffb300 5%, #f80 100%); /* W3C */
-	filter:        progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb300', endColorstr='#ff8800', GradientType=0); /* IE6-9 */
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 2px solid #8dd212;
+	border-radius: 5px;
+	padding: 9px 12px;
 }
 /* Проекты детально */
 .projects > h1{
@@ -1304,8 +1313,9 @@ div.load_bg{
 	font-family: PTSansRegular;
 }
 .projects .projects_top .projects_info_title{
-	font-size:   25px;
+	font-size:   18px;
 	font-family: PTSansBold;
+	text-transform: uppercase;
 }
 .projects .projects_top .apartment_project_text{
 	font-family: PTSansItalic;
@@ -1908,23 +1918,14 @@ div.load_bg{
 .order_form input[type="submit"]{
 	height:        40px;
 	width:         180px;
-	border:        0;
 	cursor:        pointer;
-	color:         #fff;
 	border-radius: 5px;
 	font-size:     16px;
-	transition:    background-color 400ms ease 0s;
-	font-family:   PTSansBold;
-	box-shadow:    inset 0 0 5px #f80;
-	border:        1px solid #f80;
-	background:    #ffb300; /* Old browsers */
-	background:    -moz-linear-gradient(top, #ffb300 5%, #f80 100%); /* FF3.6+ */
-	background:    -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffb300), color-stop(100%, #f80)); /* Chrome,Safari4+ */
-	background:    -webkit-linear-gradient(top, #ffb300 5%, #f80 100%); /* Chrome10+,Safari5.1+ */
-	background:    -o-linear-gradient(top, #ffb300 5%, #f80 100%); /* Opera 11.10+ */
-	background:    -ms-linear-gradient(top, #ffb300 5%, #f80 100%); /* IE10+ */
-	background:    linear-gradient(to bottom, #ffb300 5%, #f80 100%); /* W3C */
-	filter:        progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb300', endColorstr='#ff8800', GradientType=0); /* IE6-9 */
+	font-family:   PTSansBold,sans-serif;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 2px solid #8dd212;
+	padding: 9px 12px;
+	line-height: 1;
 }
 /* Шрифты */
 @font-face{

@@ -84,11 +84,12 @@ $arItemIDs = array(
 	<?}?>
 </div>
 <?endif;?>
-
+<?if(!empty($arResult['DETAIL_TEXT'])):?>
 <h3><?=GetMessage("OP");?></h3>
 <div class="projects_detail_text">
 <?=$arResult['DETAIL_TEXT'];?>
 </div>
+<?endif;?>
 
 <h2><?=GetMessage("INTERES");?></h2>
 <div class="projects_interesting">

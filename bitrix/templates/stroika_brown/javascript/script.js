@@ -9,13 +9,14 @@ $('.bxslider').bxSlider({
 });
 
     $('.webavk_ibcomments').bxSlider({
-        slideMargin:10,
+        slideMargin:25,
         slideWidth:300,
         minSlides:1,
         maxSlides:3,
         // adaptiveHeight:true,
         // responsive:false,
-        moveSlides:1,
+        moveSlides:3,
+        pager:false
     });
 
 /* Форма обратной связи */

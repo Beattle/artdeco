@@ -13,16 +13,20 @@ $frame = $this->createFrame("leave_application_form", false)->begin();
 	</script>
 	<label>
 		<span><?=GetMessage("MFT_NAME");?></span>
-		<input placeholder="<?=GetMessage("NAME_DEMO");?>" type="text" name="name" required="required" class="form-input" />
+		<input placeholder="<?/*=GetMessage("NAME_DEMO");*/?>" type="text" name="name" required="required" class="form-input" />
 	</label>
 	<label>
 		<span><?=GetMessage("MFT_PHONE");?></span>
-		<input placeholder="+7(945) 849-01-76" type="tel" name="phone" required="required" class="form-input" />
+		<input placeholder="" type="tel" name="phone" required="required" class="form-input" />
 	</label>	
 	<label>	
 		<span><?=GetMessage("MFT_EMAIL");?></span>
-		<input placeholder="info-remont@gmail.com" type="email" name="email" required="required" class="form-input" />
+		<input placeholder="" type="email" name="email" required="required" class="form-input" />
 	</label>
+    <label>
+        <span><?=GetMessage("MFT_MESSAGE")?></span>
+        <textarea name="message" class="form-input"></textarea>
+    </label>
 	<input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
 	<input type="submit" value="<?=GetMessage("SEND");?>" />
 	<?$frame->end();?>
