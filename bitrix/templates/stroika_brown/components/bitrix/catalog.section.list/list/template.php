@@ -44,7 +44,7 @@ foreach($arResult["SECTIONS"] as $key => $arSection)
 		<a href="<?=$arElement["DETAIL_PAGE_URL"];?>" class="animation_img">
 			<span class="overlay"></span>
 			<img src="<?=$picture["src"];?>" alt="<?=$arElement["NAME"];?>" />
-			<span class="link"><i class="fa fa-link"></i></span>
+			<span class="link"><i class="fa fa-search-plus"></i></span>
 		</a>
 		<p><a href="<?=$arElement["DETAIL_PAGE_URL"];?>"><?=$arElement["NAME"];?></a></p>
 		<span><?=$arElement["PREVIEW_TEXT"];?></span>

@@ -49,7 +49,10 @@ IncludeTemplateLangFile(__FILE__);
 					<div class="footer_phone">
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/footer/phone.php", Array(), Array("MODE" => "html","NAME" => ""));?>
 					</div>
-					<p class="footer_telephone_request"><a href="#"><?=GetMessage("ADD_PHONE");?></a></p> <span>|</span> <p class="footer_telephone_application"><a href="#"><?=GetMessage("ADD_APL");?></a></p>
+					<!--<p class="footer_telephone_request"><a href="#"><?/*=GetMessage("ADD_PHONE");*/?></a></p> <span>|</span>-->
+                    <p class="footer_telephone_application">
+                        <a href="#"><?=GetMessage("ADD_APL");?></a>
+                    </p>
 				</div>
 				<div class="footer_social">
 					<a href="#" class="social_block">

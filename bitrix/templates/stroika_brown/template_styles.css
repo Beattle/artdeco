@@ -177,23 +177,17 @@ h3{
 }
 .print_csv{
 	margin:        20px 0 0 0;
-	border:        1px solid #f80;
-	padding:       4px 12px;
-	border-radius: 5px;
 	display:       inline-block;
-	font-family:   PTSansBold;
-	background:    #ffb300;
-	background:    -moz-linear-gradient(top, #ffb300 5%, #f80 100%);
-	background:    -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffb300), color-stop(100%, #f80));
-	background:    -webkit-linear-gradient(top, #ffb300 5%, #f80 100%);
-	background:    -o-linear-gradient(top, #ffb300 5%, #f80 100%);
-	background:    -ms-linear-gradient(top, #ffb300 5%, #f80 100%);
-	background:    linear-gradient(to bottom, #ffb300 5%, #f80 100%);
-	filter:        progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb300', endColorstr='#ff8800', GradientType=0);
+	font-family:   PTSansBold,sans-serif;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 2px solid #8dd212;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 9px 12px;
 }
 .print_csv a{
-	color:           #fff;
 	text-decoration: none;
+	color: #202020;
 }
 /*Затемнение у слайдера */
 .slider_background_black{
@@ -389,6 +383,10 @@ footer{     /* height:149px; */
 	.contact_form label{
 		text-align: left;
 	}
+
+    .webavk_ibcomments .com_box{
+
+    }
 }
 @media only screen and (max-width: 885px){
 	.mobile_header_search{
@@ -483,6 +481,10 @@ footer{     /* height:149px; */
 	nav ul{
 		display: none;
 	}
+
+    #magic-line{
+	    display: none;
+    }
 }
 @media only screen and (max-width: 750px){
 	footer ul{

@@ -1,6 +1,8 @@
 <?
 define("NO_KEEP_STATISTIC", true);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
+echo COption::GetOptionString("main", "email_from");
+die();
 ?>
 <?
 if(SITE_CHARSET=="windows-1251")
@@ -17,5 +19,6 @@ $arEventFields = array(
 	"TEXT"   => $_REQUEST["message"],
 	"EMAIL_TO"   => COption::GetOptionString("main", "email_from"),
 );
+
 $arFields = CEvent::Send("FEEDBACK_FORM", "s1", $arEventFields, "N", $_REQUEST["event_message_id"]);
 ?>

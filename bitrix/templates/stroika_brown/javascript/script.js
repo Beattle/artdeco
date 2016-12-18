@@ -8,15 +8,27 @@ $('.bxslider').bxSlider({
 	moveSlides: 1
 });
 
-    $('.webavk_ibcomments').bxSlider({
+    $('.customer_reviews .webavk_ibcomments').bxSlider({
         slideMargin:25,
         slideWidth:300,
         minSlides:1,
         maxSlides:3,
-        // adaptiveHeight:true,
+        adaptiveHeight:true,
         // responsive:false,
-        moveSlides:3,
-        pager:false
+        moveSlides:1,
+        pager:false,
+        responsive:true
+    });
+
+    $('.about_company .see_more').click(function () {
+        var $btn = $(this);
+       $(this).parent().find('.hidden-text').slideToggle(function () {
+           if ($(this).is(':visible')) {
+           $btn.text('Скрыть текст')
+           } else {
+               $btn.text('Посмотреть весь текст');
+           }
+       });
     });
 
 /* Форма обратной связи */
@@ -71,7 +83,7 @@ $(".prev, .next").css({"margin-top":"-"+$(".prev").height() / 2+"px"});*/
 
 
 /* В проектах показать еще элементы */
-$(".projects").on('click', 'button', function(){
+$("body .projects").on('click', 'button', function(){
 	startLoadingAnimation();
 	$.ajax({
 		async: false,
@@ -81,9 +93,9 @@ $(".projects").on('click', 'button', function(){
 		dataType: "html",
 		success:function(data){
 			setTimeout(function(){
-				$(".projects").html("");
+				$("body .projects").html("");
 				$(".loadImg").hide();
-				$(".projects").html(data);
+				$("body .projects").html(data);
 			}, 1000);
 		} 
 	});
@@ -190,7 +202,7 @@ $('#slides').slidesjs({
         active: false,
         effect: "slide",
         interval: 5000,
-        auto: false,
+        auto: true,
         restartDelay: 2500,
         swap: false
     },

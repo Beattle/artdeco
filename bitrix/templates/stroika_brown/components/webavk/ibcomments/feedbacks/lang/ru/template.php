@@ -1,0 +1,46 @@
+<?
+
+$MESS['WEBAVK_COMP_MODERATOR_PANEL'] = "Панель модератора";
+$MESS['WEBAVK_COMP_MODERATOR_HIDE_COMMENT'] = "Скрыть комментарий";
+$MESS['WEBAVK_COMP_MODERATOR_SHOW_COMMENT'] = "Отобразить комментарий";
+$MESS['WEBAVK_COMP_MODERATOR_DELETE_COMMENT'] = "Удалить комментарий";
+$MESS['WEBAVK_COMP_MODERATOR_DELETE_COMMENT_CONFIRM'] = "Вы действительно хотите удалить комментарий? Комментарий будет удален безвозвратно!!!";
+$MESS['WEBAVK_COMP_HELPFUL_PLUS'] = "Понравилось";
+$MESS['WEBAVK_COMP_HELPFUL_MINUS'] = "Не понравилось";
+$MESS['WEBAVK_COMP_ADVANTAGES'] = "Адрес";
+$MESS['WEBAVK_COMP_CONS'] = "Отрицательные стороны";
+$MESS['WEBAVK_COMP_REVIEW'] = "Отзыв:";
+$MESS['WEBAVK_COMP_ADMIN_ANSWER'] = "Комментарий от ArtDeco:";
+$MESS['WEBAVK_COMP_FEATURE_VOTE_CONV'] = "Удобство";
+$MESS['WEBAVK_COMP_FEATURE_VOTE_FUNC'] = "Функциональность";
+$MESS['WEBAVK_COMP_FEATURE_VOTE_DESIGN'] = "Дизайн";
+$MESS['WEBAVK_COMP_FEATURE_VOTE_WORK'] = "Качество";
+$MESS['WEBAVK_COMP_FEATURE_VOTE_PRICE'] = "Цена";
+$MESS['WEBAVK_COMP_HEADER'] = "Напишите,пожалуйста, свой отзыв";
+$MESS['WEBAVK_COMP_ADD_COMMENT'] = "Добавить комментарий";
+$MESS['WEBAVK_COMP_FORM_FIELD_ADVANTAGES'] = "Адрес";
+$MESS['WEBAVK_COMP_FORM_FIELD_CONS'] = "Отрицательные стороны";
+$MESS['WEBAVK_COMP_FORM_FIELD_REVIEW'] = "Ваш отзыв";
+$MESS['WEBAVK_COMP_FORM_FIELD_VOTE_CONV'] = "Оценка удобства использования";
+$MESS['WEBAVK_COMP_FORM_FIELD_VOTE_FUNC'] = "Оценка функциональности";
+$MESS['WEBAVK_COMP_FORM_FIELD_VOTE_DESIGN'] = "Оценка дизайна";
+$MESS['WEBAVK_COMP_FORM_FIELD_VOTE_WORK'] = "Оценка качества изготовления";
+$MESS['WEBAVK_COMP_FORM_FIELD_VOTE_PRICE'] = "Оценка адекватности цены";
+$MESS['WEBAVK_COMP_FORM_FIELD_GUEST_NAME'] = "Ваше имя";
+$MESS['WEBAVK_COMP_FORM_FIELD_GUEST_EMAIL'] = "Ваш EMail";
+$MESS['WEBAVK_COMP_FORM_FIELD_GUEST_CAPTCHA'] = "Введите код с картинки";
+$MESS['WEBAVK_COMP_FORM_FIELD_CAPTCHA_TITLE'] = "Защита от роботов";
+$MESS['WEBAVK_COMP_FORM_FIELD_NOTE'] = "Все поля отмеченные * обязательны для заполнения";
+$MESS['WEBAVK_COMP_FORM_SUBMIT'] = "Отправить";
+$MESS['WEBAVK_COMP_MODERATOR_EDIT_COMMENT'] = "Редактировать комментарий";
+$MESS['WEBAVK_COMP_ADD_ANSWER'] = "Добавить ответ администрации";
+$MESS['WEBAVK_COMP_ADD_ANSWER_EDIT'] = "Редактировать ответ администрации";
+$MESS['WEBAVK_COMP_FORM_SUBMIT_ANSWER'] = "Сохранить ответ";
+$MESS['WEBAVK_COMP_COMMENTS_SORT_CREATE_DATE_ASC'] = "Сначала старые";
+$MESS['WEBAVK_COMP_COMMENTS_SORT_CREATE_DATE_DESC'] = "Сначала новые";
+$MESS['WEBAVK_COMP_COMMENTS_SORT_RATING_ASC'] = "Сначала самые бесполезные";
+$MESS['WEBAVK_COMP_COMMENTS_SORT_RATING_DESC'] = "Сначала самые полезные";
+$MESS['WEBAVK_COMP_COMMENTS_SORT_DEFAULT'] = "по умолчанию";
+$MESS['WEBAVK_COMP_COMMENT_IS_HIDE'] = "Отзыв скрыт ввиду его бесполезности по мнению пользователей";
+$MESS['WEBAVK_COMP_COMMENT_IS_HIDE_TOGLE_LINK'] = "Показать / скрыть отзыв";
+?>

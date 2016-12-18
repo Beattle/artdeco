@@ -79,7 +79,7 @@ $arItemIDs = array(
 		<a href="<?=$img["SRC"]?>" rel="catalog_img" class="animation_img">
 			<span class="overlay"></span>
 			<img src="<?=$img["SRC"]?>" title="<?=$arResult['NAME'];?>" alt="<?=$arResult['NAME'];?>" />
-			<span class="link"><i class="fa fa-link"></i></span>
+			<span class="link"><i class="fa fa-search-plus"></i></span>
 		</a>
 	<?}?>
 </div>
@@ -110,7 +110,7 @@ $arItemIDs = array(
 		<a href="<?=$interesting['DETAIL_PAGE_URL'];?>" class="animation_img">
 			<span class="overlay"></span>
 			<img src="<?=$img["src"]?>" title="<?=$interesting['NAME'];?>" alt="<?=$interesting['NAME'];?>" />
-			<span class="link"><i class="fa fa-link"></i></span>
+			<span class="link"><i class="fa fa-search-plus"></i></span>
 		</a>
 		<p><a href="<?=$interesting['DETAIL_PAGE_URL'];?>"><?=$interesting['NAME'];?></a></p>
 	</div>

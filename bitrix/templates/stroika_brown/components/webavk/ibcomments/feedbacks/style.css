@@ -1,0 +1,272 @@
+.feedbacks h1{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+div.webavk_ibcomments{
+	display: block;
+}
+
+.webavk_ibcomments h2{
+	color:#5c595a;
+	margin-bottom: 20px;
+}
+
+.webavk_ibcomments h1{
+	margin-bottom:15px;
+}
+
+.webavk_ibcomments_add_form_note .center{
+	text-align: center;
+}
+
+.webavk_ibcomments form{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	padding: 20px;
+	border: 1px solid #CCC;
+}
+
+.webavk_ibcomments  fieldset{
+	border: none;
+}
+
+div.webavk_ibcomments_item{
+	display:  block;
+	margin:   10px auto;
+	padding:  20px;
+	border:   1px dotted #ccc;
+	position: relative;
+	max-width: 640px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+
+}
+div.webavk_ibcomments_item td{
+	vertical-align: top;
+}
+.webavk_ibcomments_user{
+	width: 80%;
+	text-align: left;
+}
+.webavk_ibcomments_user img{
+	float:  left;
+	margin: 0 10px 10px 0;
+}
+.webavk_ibcomments_item_nomoderate{
+	background-color: #e0e0e0;
+}
+.webavk_ibcomments_item_moderatearea{
+	display:          block;
+	border:           1px dashed #ccc;
+	position:         absolute;
+	right:            -3px;
+	top:              -25px;
+	padding:          2px;
+	background-color: #eee;
+}
+.webavk_ibcomments_item_moderatearea a span{
+	display: none;
+}
+.webavk_ibcomments_item_moderatearea a{
+	display: inline-block;
+	width:   24px;
+	height:  24px;
+	margin:  0 2px;
+}
+.webavk_ibcomments_item_moderatearea_modok{
+	background: url(images/modok.png) 0 0 no-repeat;
+}
+.webavk_ibcomments_item_moderatearea_modok:hover{
+	background-position: 0 -24px;
+}
+.webavk_ibcomments_item_moderatearea_modfalse{
+	background: url(images/modfalse.png) 0 0 no-repeat;
+}
+.webavk_ibcomments_item_moderatearea_modfalse:hover{
+	background-position: 0 -24px;
+}
+.webavk_ibcomments_item_moderatearea_moddel{
+	background: url(images/moddel.png) 0 0 no-repeat;
+}
+.webavk_ibcomments_item_moderatearea_moddel:hover{
+	background-position: 0 -24px;
+}
+.webavk_ibcomments_item_moderatearea_modedit{
+	background: url(images/modedit.png) 0 0 no-repeat;
+}
+.webavk_ibcomments_item_moderatearea_modedit:hover{
+	background-position: 0 -24px;
+}
+.webavk_ibcomments_helpful_area{
+	white-space: nowrap;
+	text-align:  right;
+}
+.webavk_ibcomments_helpul_plus_cnt{
+	font-weight:    bold;
+	color:          #067d00;
+	line-height:    16px;
+	vertical-align: middle;
+}
+.webavk_ibcomments_helpul_plus_link{
+	text-decoration: none;
+	display:         inline-block;
+	background:      url(images/helpfulplus.png) 0 0 no-repeat;
+	width:           16px;
+	height:          16px;
+	line-height:     16px;
+	vertical-align:  middle;
+}
+.webavk_ibcomments_helpul_plus_link:hover{
+	background-position: 0 -16px;
+}
+.webavk_ibcomments_helpul_plus_link span{
+	display: none;
+}
+.webavk_ibcomments_helpul_minus_cnt{
+	font-weight:    bold;
+	color:          #ab0000;
+	line-height:    16px;
+	vertical-align: middle;
+}
+.webavk_ibcomments_helpul_minus_link{
+	text-decoration: none;
+	display:         inline-block;
+	background:      url(images/helpfulminus.png) 0 0 no-repeat;
+	width:           16px;
+	height:          16px;
+	line-height:     16px;
+	vertical-align:  middle;
+}
+.webavk_ibcomments_helpul_minus_link:hover{
+	background-position: 0 -16px;
+}
+.webavk_ibcomments_helpul_minus_link span{
+	display: none;
+}
+.webavk_ibcomments_text_area{
+	display: block;
+}
+.webavk_ibcomments_text_area h3{
+	text-align: left;
+	font-size: inherit;
+	text-transform: none;
+	font-family: PTSansRegular, sans-serif;
+	color:inherit;
+}
+.webavk_ibcomments_text_area_content{
+	text-align:       justify;
+	padding:          0;
+}
+.webavk_ibcomments_admin_answer{
+	display: block;
+	margin:  20px 50px 0 150px;
+}
+.webavk_ibcomments_admin_answer h3{
+	text-transform: none;
+	color: #6c6c6c;
+	font-size: inherit;
+}
+.webavk_ibcomments_admin_answer_content{
+	text-align:       justify;
+	padding:          5px;
+	border:           2px dotted #c0c0c0;
+	background-color: #f6f5f5;
+}
+.webavk_ibcomments_stars_area{
+	white-space: nowrap;
+	text-align:  right;
+}
+.webavk_ibcomments_stars_block{
+	display: block;
+	padding: 0 0 10px 0;
+}
+.webavk_ibcomments_stars_block h3{
+	padding: 0;
+	margin:  0;
+}
+.webavk_ibcomments_star{
+	display:    inline-block;
+	width:      16px;
+	height:     17px;
+	background: url(images/star.png) 0 0 no-repeat;
+}
+.webavk_ibcomments_star_active{
+	background-position: 0 -17px;
+}
+.webavk_ibcomments_add_area{
+	display: block;
+	padding: 0 0 10px 0;
+}
+.webavk_ibcomments_add_area .webavk_ibcomments_add_showlink{
+	text-decoration: none;
+}
+.webavk_ibcomments_add_area .webavk_ibcomments_add_showlink span{
+	border-bottom: 1px dotted #888;
+}
+.webavk_ibcomments_add_area .webavk_ibcomments_add_showlink:hover span{
+	border-bottom: 0 none;
+}
+.webavk_ibcomments_add_form{
+	display: block;
+	max-width: 640px;
+	margin: 0 auto;
+}
+.webavk_ibcomments_add_form table{
+	border-collapse: collapse;
+}
+.webavk_ibcomments_add_form th{
+	vertical-align:   top;
+	padding:          15px 5px 5px;
+	text-align: left;
+}
+.webavk_ibcomments_add_form td{
+	vertical-align:   top;
+	padding:          5px;
+	text-align: left;
+}
+
+.webavk_ibcomments_add_form td input[name=send]{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 2px solid #8dd212;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 9px 12px;
+	text-transform: uppercase;
+}
+
+.webavk_ibcomments_add_form_note{
+	padding:     10px;
+	font-weight: bold;
+	font-style:  italic;
+}
+.webavk_ibcomments_item_add_answer{
+	display: block;
+	padding: 5px;
+}
+.webavk_ibcomments_answer_area{
+	display: block;
+	padding: 0 0 10px 0;
+}
+.webavk_ibcomments_answer_area table{
+	border-collapse: collapse;
+}
+.webavk_ibcomments_answer_area th{
+	vertical-align:   top;
+	padding:          5px;
+	border:           1px dotted #eee;
+	background-color: #f8f8f8;
+	text-align:       right;
+}
+.webavk_ibcomments_answer_area td{
+	vertical-align:   top;
+	padding:          5px;
+	border:           1px dotted #eee;
+	background-color: #f8f8f8;
+	text-align:       left;
+}
+.webavk_ibcomments_item_sort_area{
+	text-align: right;
+}

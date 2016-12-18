@@ -1,6 +1,16 @@
 <?
 IncludeTemplateLangFile(__FILE__);
 $context = \Bitrix\Main\Application::getInstance()->getContext();
+
+function bclass() {
+    global $APPLICATION;
+    $DirExp = explode('/', $APPLICATION->GetCurDir());
+    $class ='';
+    if ($DirExp[1] !== '')
+        $class = ' class="'.$DirExp[1].'"';
+    return $class;
+}
+
 ?>
 <!DOCTYPE HTML>
 <html lang="<?=LANGUAGE_ID?>">
@@ -35,7 +45,7 @@ $context = \Bitrix\Main\Application::getInstance()->getContext();
 	<![endif]-->
 	<?$APPLICATION->ShowHead();?>
 </head>
-<body class="<?=$APPLICATION->GetCurPage();?>" itemscope itemtype="http://schema.org/WebPage">
+<body <?=bclass()?> itemscope itemtype="http://schema.org/WebPage">
 <div class="wrapper">
 <?
 $APPLICATION->ShowPanel();
