@@ -165,12 +165,13 @@ header{
 .header_contact button{
 	border-radius: 5px;
 	border:        2px solid #8dd212;
-	padding:       9px 12px;
+	padding:       9px 12px 8px;
 	cursor:        pointer;
 	background: none;
 	width: 100%;
 	background: #fff;
 	text-transform: uppercase;
+
 }
 .fixed_menu{
 	position: fixed;
@@ -395,7 +396,7 @@ header nav ul li:first-child{
 }
 
 .pros{
-	background: url("images/texture.png") repeat;
+	background: url("images/f_bg.png") repeat;
 	min-height: 308px;
 	position: relative;
 }
@@ -445,10 +446,22 @@ header nav ul li:first-child{
 	bottom: 0;
 	margin: auto;
 	overflow: hidden;
-	height: 183px;
+	height: 250px;
 }
 
+.pros .heading{
+	text-align: center;
+	margin-bottom: 36px;
 
+}
+
+.pros .heading span{
+	font-family: PTSansBold;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
 
 .pros_element div.froze_icon{
 	margin:     0 auto 5px auto;
@@ -1552,6 +1565,10 @@ div.load_bg{
 	margin: 0 0 15px 0;
 }
 /* Новости */
+.articles .bx-pagination, .action .bx-pagination{
+	margin-bottom: 40px;
+}
+
 .news_section{
 }
 .news_section h1{

@@ -1,11 +1,13 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ремонт под ключ в уфе");
+$APPLICATION->SetPageProperty("title", "Ремонт под ключ в Уфе");
+$APPLICATION->SetTitle("Art Deco - Ремонт квартир под ключ в Уфе");
 $APPLICATION->SetPageProperty("tags", "Главная");
-$APPLICATION->SetPageProperty("keywords", "Ключевые, слова, вашего, сайта");
-$APPLICATION->SetPageProperty("description", "Описание вашего сайта");
+$APPLICATION->SetPageProperty("keywords", "ремонт квартир под ключ в уфе в новостройке, капитальный ремонт");
+$APPLICATION->SetPageProperty("description", "Студия ремонт и дизайна \"Art Deco\" выполнит ремонт квартир под ключ в Уфе в оптимальные сроки и с гарантией");
 ?><div class="pros">
 	<div class="wrapper_center">
+        <div class="heading"><span class="in_h">Ваши преимущества</span> </div>
 		<div class="box">
  <i class="icon smeta"></i>
 			<p class="f_name">

@@ -10,6 +10,7 @@ div.webavk_ibcomments{
 .webavk_ibcomments h2{
 	color:#5c595a;
 	margin-bottom: 20px;
+	font-size: 18px;
 }
 
 .webavk_ibcomments h1{
@@ -51,6 +52,19 @@ div.webavk_ibcomments_item td{
 	width: 80%;
 	text-align: left;
 }
+
+.webavk_ibcomments_user .date{
+	margin-left: 25px;
+	color: #9f9d9d;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.webavk_ibcomments_review{
+	margin-top: 25px;
+}
+
+
 .webavk_ibcomments_user img{
 	float:  left;
 	margin: 0 10px 10px 0;
@@ -154,8 +168,13 @@ div.webavk_ibcomments_item td{
 	font-size: inherit;
 	text-transform: none;
 	font-family: PTSansRegular, sans-serif;
-	color:inherit;
+	color:#9f9d9d;
 }
+
+.webavk_ibcomments_review .webavk_ibcomments_text_area_content{
+	margin-top: 15px;
+}
+
 .webavk_ibcomments_text_area_content{
 	text-align:       justify;
 	padding:          0;
@@ -166,8 +185,9 @@ div.webavk_ibcomments_item td{
 }
 .webavk_ibcomments_admin_answer h3{
 	text-transform: none;
-	color: #6c6c6c;
+	color: #9f9d9d;
 	font-size: inherit;
+	text-align: left;
 }
 .webavk_ibcomments_admin_answer_content{
 	text-align:       justify;

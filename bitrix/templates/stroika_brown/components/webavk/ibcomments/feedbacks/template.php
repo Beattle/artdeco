@@ -285,7 +285,7 @@
 							<?
 						}
 						?>
-						<?= $arItem["PROPERTIES"]['AUTHOR_NAME']['VALUE'] ?> <span class="date">(<?= $arItem['FORMAT_DATE_CREATE'] ?>)</span>
+						<?= $arItem["PROPERTIES"]['AUTHOR_NAME']['VALUE'] ?> <span class="date"><?= $arItem['FORMAT_DATE_CREATE'] ?></span>
 					</td>
 					<td class="webavk_ibcomments_helpful_area">
 						<?
