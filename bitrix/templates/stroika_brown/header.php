@@ -10,7 +10,6 @@ function bclass() {
         $class = ' class="'.$DirExp[1].'"';
     return $class;
 }
-
 ?>
 <!DOCTYPE HTML>
 <html lang="<?=LANGUAGE_ID?>">

@@ -26,6 +26,8 @@ header{
 	float:  left;
 	width: 33.3333%;
 }
+
+
 /*.header_center .logo div{
 	width:  272px;
 	height: 85px;
@@ -488,7 +490,7 @@ header nav ul li:first-child{
 	height:        43px;
 	margin-bottom: 12px;
 }
-.services{
+body .services{
 	padding: 30px 0;
 }
 
@@ -542,8 +544,7 @@ header nav ul li:first-child{
 .about_company{
 	position:        relative;
 	padding:         25px 0;
-	background:      url('images/bg_rep.jpg') no-repeat center center;
-	background-size: cover;
+	background:      url('images/bg_rep.jpg') no-repeat top center;
 	min-height:      350px;
 }
 
@@ -596,7 +597,7 @@ header nav ul li:first-child{
 	margin:         0 0 15px 0;
 }
 .about_company_center > div p{
-	color:      #fff;
+	color:      #c2c2c2;
 	text-align: justify;
 	margin:     0 0 10px 0;
 }
@@ -742,7 +743,7 @@ a.animation_img:hover img{
 }
 
 .customer_reviews .wrapper_center{
-	/*max-width: 1200px;*/
+	position: relative;
 }
 
 .customer_reviews h2{
@@ -800,6 +801,23 @@ a.animation_img:hover img{
 	color: #000;
 }
 
+.link-more{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.link-more a{
+	background: #fff none repeat scroll 0 0;
+	border: 2px solid #8dd212;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 9px 12px 8px;
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: none;
+	color: #202020;
+}
+
 .customer_reviews .webavk_ibcomments_review{
 	margin-top: 23px;
 	color:#2e2e2e;
@@ -841,9 +859,10 @@ a.animation_img:hover img{
 	font-family: PTSansBold;
 }
 footer{
-	background: #002a3d;
 	position:   relative;
 	padding:    0 0 25px 0;
+	background: url("images/footer_bg.png");
+	border-top: 10px solid #d8d9d7;
 }
 .hFooter{
 }
@@ -854,6 +873,8 @@ footer{
 footer ul{
 	overflow:      hidden;
 	border-bottom: 1px dotted #001119;
+	margin: 0;
+	list-style: none;
 }
 footer ul li{
 	font-family: PTSansBold;
@@ -895,8 +916,9 @@ footer ul li a:hover{
 	text-decoration: underline;
 }
 .footer_guide{
-	width: 32%;
+	width: 27%;
 	float: left;
+	padding-left: 50px;
 }
 .footer_address{
 	background:  url("images/address_icon_footer.png") no-repeat;
@@ -930,6 +952,12 @@ footer ul li a:hover{
 .footer_telephone p{
 	text-align: center;
 }
+
+.footer_telephone_application{
+	position: relative;
+	top:20px;
+}
+
 .footer_telephone p a{
 	color: #ccc;
 }
@@ -1262,7 +1290,7 @@ div.load_bg{
 .projects_elemetnt img{
 	max-width:  235px;
 	width:      100%;
-	max-height: 130px;
+	max-height: 151px;
 	display:    block;
 	transition: transform 0.2s ease-in;
 }
@@ -1364,7 +1392,7 @@ div.load_bg{
 .projects_photo img{
 	width:      100%;
 	display:    block;
-	height:     180px;
+	height:     auto;
 	transition: transform 0.2s ease-in;
 }
 .projects_detail_text{
@@ -1714,6 +1742,7 @@ div.load_bg{
 	font-family:    PTSansBold;
 	margin:         0 0 10px 0;
 	text-transform: none;
+	text-align: center;
 }
 .services_section_item .description h2 a{
 	color: #926D66;
@@ -1753,6 +1782,32 @@ div.load_bg{
 	margin:     0 0 15px 0;
 	text-align: justify;
 }
+
+.economy,
+.premium,
+.luxery{
+	max-width: 300px;
+	max-height: 300px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	-webkit-background-size: contain;
+	background-size:         contain;
+}
+.economy{
+	background: url("images/services/economy.png") no-repeat center /contain;
+}
+
+.premium{
+	background: url("images/services/premium.png") no-repeat center /contain;
+}
+
+.luxery{
+	background: url("images/services/luxury.png") no-repeat center /contain;
+}
+
+
+
 /* Поиск */
 .search_page{
 }

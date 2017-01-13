@@ -41,7 +41,7 @@ $this->setFrameMode(true);
 					<?=$arItem["PREVIEW_TEXT"];?>
 				</div>
 			</div>
-			<p><a href="<?=$arItem["DETAIL_PAGE_URL"]?>" itemprop="url">Читать далее</a></p>
+<!--			<p><a href="<?/*=$arItem["DETAIL_PAGE_URL"]*/?>" itemprop="url">Читать далее</a></p>-->
 		</article>
 	<?if($count % 3 == 0) echo "</div>";?>
 	<?endforeach;?>

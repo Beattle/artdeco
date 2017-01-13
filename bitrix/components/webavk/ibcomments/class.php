@@ -545,9 +545,18 @@ class CWebAVKIBCommentsComponent extends CBitrixComponent {
 		$rsElements = CIBlockElement::GetList($arSort, $arFilter, false, $this->arNavParams, $arSelect);
 		while ($obElement = $rsElements->GetNextElement()) {
 			$arItem = $obElement->GetFields();
-			$arItem['FORMAT_DATE_CREATE'] = CIBlockFormatProperties::DateFormat($this->arParams["DATE_FORMAT"], MakeTimeStamp($arItem["DATE_CREATE"], CSite::GetDateFormat()));
-			//myPrint($arItem);
-			$arItem["PROPERTIES"] = $obElement->GetProperties();
+            $arItem["PROPERTIES"] = $obElement->GetProperties();
+
+			if(!empty($arItem['PROPERTIES']['CUSTOM_DATE']['VALUE'])) {
+			    $arItem['FORMAT_DATE_CREATE'] =  CIBlockFormatProperties::DateFormat($this->arParams["DATE_FORMAT"], MakeTimeStamp($arItem['PROPERTIES']['CUSTOM_DATE']['VALUE'], CSite::GetDateFormat()));
+            } else{
+                $arItem['FORMAT_DATE_CREATE'] = CIBlockFormatProperties::DateFormat($this->arParams["DATE_FORMAT"], MakeTimeStamp($arItem["DATE_CREATE"], CSite::GetDateFormat()));
+            }
+
+
+			// myPrint($arItem);
+
+			// if(!empty($arItem]))
 			if ($arItem['CREATED_BY'] > 0) {
 				$rUser = CUser::GetByID($arItem['CREATED_BY']);
 				if ($arUser = $rUser->GetNext()) {

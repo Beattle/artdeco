@@ -24,7 +24,7 @@ array(
 	"SORT_ORDER2" => "ASC",
 	"CHECK_DATES" => "Y",
 	"SEF_MODE" => "Y",
-	"SEF_FOLDER" => SITE_DIR."action/",
+	"SEF_FOLDER" => "/action/",
 	"AJAX_MODE" => "N",
 	"AJAX_OPTION_JUMP" => "N",
 	"AJAX_OPTION_STYLE" => "Y",

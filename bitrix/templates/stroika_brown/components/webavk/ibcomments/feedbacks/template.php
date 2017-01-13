@@ -264,6 +264,7 @@
 	}
 
 	foreach ($arResult['ITEMS'] as $arItem) {
+	  //  echo '<pre>'.print_r($arItem['PROPERTIES']['CUSTOM_DATE'],true).'</pre>';
 		?>
 		<div class="webavk_ibcomments_item<?= (($arResult['IS_MODERATOR'] || $arResult['IS_ADMIN']) && $arItem['ACTIVE'] != "Y" ? " webavk_ibcomments_item_nomoderate" : "") ?> webavk_ibcomments_item_<?= $arItem['ID'] ?>">
 			<table width="100%">

@@ -23,8 +23,8 @@ $APPLICATION->SetPageProperty("description", "Описание вашего сайта");
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER2" => "ASC",
 		"CHECK_DATES" => "Y",
-		"SEF_MODE" => "Y",
-		"SEF_FOLDER" => SITE_DIR."services/",
+		"SEF_MODE" => "Y", //SITE_DIR."services/
+		"SEF_FOLDER" => "/services/",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
@@ -88,11 +88,11 @@ $APPLICATION->SetPageProperty("description", "Описание вашего сайта");
 		"SET_STATUS_404" => "N",
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
-		"SEF_URL_TEMPLATES" => array(
-			"news" => "",
-			"section" => "",
-			"detail" => "#ELEMENT_ID#/",
-		)
+        "SEF_URL_TEMPLATES" => Array(
+            "detail" => "#ELEMENT_CODE#/",
+            "news" => "",
+            "section" => "",
+        ),
 	),
 	false
 );?>

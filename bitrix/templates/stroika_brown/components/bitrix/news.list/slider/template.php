@@ -10,8 +10,12 @@
 			BX_RESIZE_IMAGE_PROPORTIONAL,
 			false,  $arFilters = Array()
 		);
+		// echo '<pre>'.print_r($arItem,true).'</pre>';
 		?>
+
+        <a href="<?=$arItem['PROPERTIES']['SLIDER_URL']['VALUE']?>" class="sl_link">
 			<img class="slides_images" src="<?=$slider["src"];?>" alt="<?=$arItem["NAME"];?>" />
+        </a>
 	<?endforeach;?>
 <a href="#" class="prev slidesjs-previous slidesjs-navigation"></a>
 <a href="#" class="next slidesjs-next slidesjs-navigation"></a>

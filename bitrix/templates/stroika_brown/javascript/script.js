@@ -16,8 +16,9 @@ $('.bxslider').bxSlider({
         adaptiveHeight:true,
         // responsive:false,
         moveSlides:1,
-        pager:false,
-        responsive:true
+        pager:true,
+        responsive:true,
+        controls:false
     });
 
     $('.about_company .see_more').click(function () {

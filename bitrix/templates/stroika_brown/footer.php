@@ -6,7 +6,7 @@ IncludeTemplateLangFile(__FILE__);
 	</div>
 	<footer>
 		<div class="footer_center">
-			<?$APPLICATION->IncludeComponent(
+<!--			--><?/*$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
 	"menu_footer", 
 	array(
@@ -25,7 +25,7 @@ IncludeTemplateLangFile(__FILE__);
 		"MENU_THEME" => "site"
 	),
 	false
-);?>
+);*/?>
 			<div class="footer_information">
 				<div class="footer_copyright">
 					<div>

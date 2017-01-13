@@ -54,9 +54,19 @@
 								<div class="webavk_ibcomments_text_area_content webavk_ibcomments_review_content">
 									<?
 									if ($arItem['PROPERTIES']['REVIEW']['~VALUE']['TYPE'] == "TEXT") {
-										echo nl2br($arItem['PROPERTIES']['REVIEW']['VALUE']['TEXT']);
+									    $text = nl2br($arItem['PROPERTIES']['REVIEW']['VALUE']['TEXT']);
+                                        $array = explode( "\n", wordwrap( $text, 35));
+									    $prep_text = implode("\n",array_slice($array,0,9)).'...';
+									    echo $prep_text;
+
+
+
 									} else {
-										echo $arItem['PROPERTIES']['REVIEW']['~VALUE']['TEXT'];
+
+                                        $text = $arItem['PROPERTIES']['REVIEW']['~VALUE']['TEXT'];
+                                        $array = explode( "\n", wordwrap( $text, 35));
+                                        $prep_text = implode("\n",array_slice($array,0,9)).'...';
+                                        echo $prep_text;
 									}
 									?>
 								</div>
@@ -72,4 +82,6 @@
 	}
 
 	?>
+
 </div>
+<div class="link-more"><a href="/feedbacks/">Посмотреть все отзывы</a></div>
